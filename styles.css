@@ -1,0 +1,59 @@
+/* Video Background Styles */
+#video-bg iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Text and Menu Overlay Styles */
+#text-overlay {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+#menu-buttons {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+#text-overlay p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Menu Button Styles */
+.menu-btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  opacity: 0.2;
+  box-shadow: 0 0 10px lightblue;
+}
+
+/* Bootstrap Overrides */
+.btn-primary {
+  background-color: black;
+  border: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width : 1604px ){
+  #text-overlay p, .menu-btn {
+    font-size: 0.8em;
+  }
+}
